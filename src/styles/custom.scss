@@ -10,7 +10,50 @@ body {
 .container {
     margin-top: 20px;
 }
-#menu{
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li{
+    margin-left: 10px;
+}
+#logo{
+    color: #285E67;
+}
+#inteficieMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#boton{
+    margin-top: 20px;
+    width: 251px;
+    height: 56px;
+    border-radius: 67px;
+    background-color: #285E67;
+    padding: 16px;
+    gap: 16px;
+    color: white;
+}
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#imagenesRedu{
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    
+}
+#primerasFotos{
+    height: 250px;
+    width: 400px;
+    border-radius: 16px;
+    
 }
