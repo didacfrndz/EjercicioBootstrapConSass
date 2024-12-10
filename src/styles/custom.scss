@@ -1,10 +1,11 @@
 // src/styles/custom.scss
 *{
     margin: 0;
-    padding: 0;
+    padding:0;
 }
 body {
     font-family: Arial, sans-serif;
+    padding: 5%;
 }
 
 .container {
@@ -43,17 +44,90 @@ nav ul li{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 10%;
 }
 #imagenesRedu{
-    margin-top: 20px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    
     
 }
 #primerasFotos{
-    height: 250px;
-    width: 400px;
-    border-radius: 16px;
-    
+    width: 48%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5%;
+}
+#seccion1{
+    margin-bottom: 2%;
+}
+//seccion2
+
+#seccion2{
+    margin-bottom: 2%;
+}
+//seccion3
+
+#planta{
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+}
+//seccion4
+#seccion4{
+    margin-bottom: 2%;
+}
+//footer
+footer{
+    height: 150px;
+    background-color: #285E67;
+    color: white;
+}
+#divFooter{
+    display: flex;
+    justify-content: space-between;
+}
+#footerLogos{
+    padding: 5%;
+}
+#footerLogos p{
+    margin-bottom: 10px;
+    font-size: larger;
+}
+#footerNav{
+    padding: 5%;
+}
+
+//frame
+
+#botonBlanco{
+    color: white;
+    border: 1px solid white;
+    margin-top: 20px;
+    width: 251px;
+    height: 56px;
+    border-radius: 67px;
+    padding: 16px;
+    gap: 16px;
+}
+#fotoFondo{
+    background-image: url("fondo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.rectangulo{
+    position: absolute;
+    bottom: -50px;  /* Ajusta para mover la mitad del rectángulo fuera de la imagen */
+    left: 50%;      /* Centra el rectángulo horizontalmente */
+    transform: translateX(-50%);  /* Ajuste fino para centrar */
+    width: 100%;    /* El rectángulo tiene el mismo ancho que el contenedor */
+    height: 100px;  /* Altura del rectángulo */
+    background-color: white;
+    border-radius: 5px;  /* Bordes redondeados, opcional */
+}
+.rectangulo p {
+    margin: 0;
+    color: #333;  /* Color del texto dentro del rectángulo */
+    font-size: 18px;
 }
